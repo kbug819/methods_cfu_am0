@@ -1,6 +1,7 @@
 # SECTION 1: Calling methods on string or integer objects.
 # Run each line of code below (either from this file or in IRB individually).
-# Then, in a ruby comment, write 1-2 sentences describing what is happening, using ALL the involved vocabulary terms you've learned in this lesson so far.
+# Then, in a ruby comment, write 1-2 sentences describing what is happening, 
+#using ALL the involved vocabulary terms you've learned in this lesson so far.
 
 # EXAMPLE
 # The downcase method is called on the string object "Hello World"
@@ -8,19 +9,34 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The .include method is called on the string object "Hello World"
+#No arguments are passed; include has one clear job wich is to inquire if the string
+#includes the word 'Hello'
+#The return value is "true"
 "Hello World".include?("Hello")
 
-
+#The .end_with method is called on the string object "Hello World"
+#No arguments are passed; end_with has one clar job which is to inquire if the string
+#ends with "Hello"
+#The reurn value is "false"
 "Hello World".end_with?("Hello")
 
-
+# The .end_with method is called on the string obfect "Hello World"
+#No arguments are passed; end_with has one clear job which is to inquire if the string
+#ends with "Hello"
+#The return value is "true"
 "Hello World".end_with?("rld")
 
-
+#The even method is called on the integer 12
+#No arguments are passed; .even has one clear job which is to inquire if the integer
+# is an even number
+#The return value is "True"
 12.even?
 
-
+#The .next method is called on the integer 18
+#No arguments are passed; .next has one clear job which is to printt the next 
+#integer, or integer + 1.
+#The return value is "19"
 18.next
 
 
