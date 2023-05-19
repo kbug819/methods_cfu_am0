@@ -10,7 +10,7 @@
 "Hello World".downcase
 
 # The .include method is called on the string object "Hello World"
-#No arguments are passed; include has one clear job wich is to inquire if the string
+#No arguments are included; include has one clear job wich is to inquire if the string
 #includes the word 'Hello'
 #The return value is "true"
 "Hello World".include?("Hello")
@@ -45,7 +45,8 @@
 # Declare 2 variables assigned to string objects.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/String.html
-# Include comments above each method call explaining the impact and return value of that method.
+# Include comments above each method call explaining the impact and return value
+# of that method.
 
 # EXAMPLE
 # The start_with? method is called on the first_name variable, which stores the string object "Jeff". 
@@ -54,6 +55,19 @@
 # The puts command prints the return value of the start_with? method (true) to the console.
 first_name = "Jeff"
 puts first_name.start_with?("J")
+
+#1. The .upcase meethod is called on the last_name variable which stores the string "Janes"
+#The upcase method changes the string to all uppercase letters.
+#The return value is: "JANES"
+last_name = "Janes"
+puts last_name.upcase
+
+#2. The .strip! method is called on the cat_name variable which stores the string "       Neela   "
+#This method removes any extra whitespace or spaces before or after the word in the string
+#This could be helpful if data is entered with extra spaces
+#the return value goes from "        Neela  " to "Neela"
+cat_name = "       Neela   "
+puts cat_name.strip!
 
 
 
