@@ -56,11 +56,11 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
-#1. The .upcase meethod is called on the last_name variable which stores the string "Janes"
-#The upcase method changes the string to all uppercase letters.
-#The return value is: "JANES"
+#1. The .center method is called on the last_name variable which stores the string "Janes"
+#The center method changes the string width by the number following in parenthesis
+#The return value is: "          JANES          " 
 last_name = "Janes"
-puts last_name.upcase
+puts last_name.center(10)
 
 #2. The .strip! method is called on the cat_name variable which stores the string "       Neela   "
 #This method removes any extra whitespace or spaces before or after the word in the string
@@ -77,6 +77,21 @@ puts cat_name.strip!
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+#1. The to_f method is called on the t_age variablee which stores the integer 43.
+#This method changes the integer into a float.
+#The return value will be 43.0
+t_age = 43
+puts t_age.to_f
+
+#2 The .digits method is called on the hours variable which stores the integer 90.
+#This method returns an array of integers starting with the last integer followed by the first.
+#The return value will be:
+#9
+#8
+#2
+hours = 289
+puts hours.digits
+
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -84,3 +99,19 @@ puts cat_name.strip!
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+#1. The .push method is called on an array variable storing feelings in strings.
+#This method adds a new element to the array.
+#When returned, the new element will be added to the array and will return:
+#"happy"
+#"sad"
+#"hungry"
+#"intriuged"
+feelings = ["happy", "sad", "hungry"]
+puts feelings.push("intrigued")
+
+#2. The .reverse method is called on an array variable called 'integers'.
+#This method prints the elements in reverse.
+#When returned, it will print "4, 2, 5, 8"
+integers = [8, 5, 2, 4]
+puts integers.reverse
